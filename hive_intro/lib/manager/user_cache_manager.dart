@@ -4,7 +4,7 @@ import 'package:hive_intro/home/model/user_model.dart';
 
 abstract class ICacheManager<T> {
   final String key;
-  Box<UserModel>? _box;
+  Box<T>? _box;
 
   ICacheManager(this.key);
   Future<void> init() async {
