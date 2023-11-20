@@ -46,10 +46,12 @@ class UserModel {
         name: json["name"] ?? json["name"],
         username: json["username"] ?? json["username"],
         email: json["email"] ?? json["email"],
-        address: json["address"] == null ? null : Address.fromJson(json["address"]),
+        address:
+            json["address"] == null ? null : Address.fromJson(json["address"]),
         phone: json["phone"] ?? json["phone"],
         website: json["website"] ?? json["website"],
-        company: json["company"] == null ? null : Company.fromJson(json["company"]),
+        company:
+            json["company"] == null ? null : Company.fromJson(json["company"]),
       );
 
   Map<String, dynamic> toJson() => {

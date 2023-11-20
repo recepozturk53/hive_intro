@@ -170,7 +170,7 @@ class _HomeViewState extends State<HomeView> {
               icon: const Icon(Icons.search)),
           IconButton(
               onPressed: () {
-                _showAddDialog(true, null);
+                _showAddDialog(false, null);
               },
               icon: const Icon(Icons.add))
         ],

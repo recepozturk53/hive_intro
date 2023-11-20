@@ -15,7 +15,9 @@ class _SearchViewState extends State<SearchView> {
   void findAndSet(String key) {
     _items = widget.model
             .getValues()
-            ?.where((element) => element.name?.toLowerCase().contains(key.toLowerCase()) ?? false)
+            ?.where((element) =>
+                element.name?.toLowerCase().contains(key.toLowerCase()) ??
+                false)
             .toList() ??
         [];
     setState(() {});
